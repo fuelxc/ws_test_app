@@ -1,0 +1,16 @@
+Home Page
+<br>
+Current user:
+<br>
+<%= current_user.email %>
+
+<br><br>
+<button id="resize">Trigger Resize</button>
+<br>
+<button id="new-film">Trigger New Film</button>
+
+<%= javascript_tag do %>
+  $(function() {
+    webSocketTest = new WebSocketTest('localhost:8080/websocket');
+  });
+<% end %>
